@@ -1,7 +1,7 @@
 import requests
 from dotenv import load_dotenv
 from os import getenv
-from flask import Flask, render_template, request, jsonify, url_for
+from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
