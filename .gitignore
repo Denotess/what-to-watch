@@ -16,3 +16,6 @@ Thumbs.db
 # IDE/project files
 .vscode/
 .idea/
+
+# Databases
+app.db
