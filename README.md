@@ -1,5 +1,7 @@
 # 🎬 WhatToWatch — Movie Discovery App
 
+🎬 [WhatToWatch](https://what-to-watch-gh3v.onrender.com/)
+
 **Discover your next favorite movie.**  
 A full-stack Flask web application that helps users find, filter, and save movies or TV shows based on their preferences — powered by the **TMDB API**.
 
