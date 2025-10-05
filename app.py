@@ -67,11 +67,9 @@ def initDb():
             UNIQUE(user_id, movie_id, movie_type)
         )
         """)
-        print("Watchlist table created/verified")
 
         db.commit()
         db.close()
-        print("Database initialization complete!")
 
     except Exception as e:
         import traceback
@@ -211,7 +209,6 @@ def videos_api():
 
 @app.post("/auth/signup")
 def signup():
-    print("=== SIGNUP ENDPOINT CALLED ===")
     try:
         data = request.get_json()
 
@@ -421,8 +418,9 @@ def checkInWatchlist():
 
 @app.get("/auth/google")
 def googleLogin():
-    #redirectUri = getenv("GOOGLE_REDIRECT_URI")
-    redirectUri = f"http://{request.host}/auth/google/callback"
+    redirectUri = getenv("GOOGLE_REDIRECT_URI")
+    #redirectUri = f"http://{request.host}/auth/google/callback"
+    print(redirectUri)
     return google.authorize_redirect(redirectUri)
 
 
