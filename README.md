@@ -85,7 +85,7 @@ GOOGLE_REDIRECT_URI=http://127.0.0.1:5000/auth/google/callback
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/your-username/what-to-watch.git
+git clone https://github.com/Denotess/what-to-watch.git
 cd what-to-watch
 ```
 
